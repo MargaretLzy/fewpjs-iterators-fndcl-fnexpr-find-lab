@@ -1,8 +1,7 @@
 function superbowlWin(obj) {
-    let found = obj.find(obj=>obj.result==="W")
-      if (found){
-
-        return found.year}
-     
-   
+    obj.find(function(e){
+        if( e.result==="W")
+        return this.year
+    
+    })
 }
